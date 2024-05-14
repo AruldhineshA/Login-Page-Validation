@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="Style.Css">
+
+   <script src="/index.js"></script>
+</head>
+<body>
+    
+            <form>
+                <h1>LOGIN PAGE</h1>
+              <div class="form">
+                <label >UserName</label>
+                <input type="text" placeholder="Enter Username" id="Username" required>
+                  <label >Password</label>
+                  <input type="password" placeholder="Enter Password" id="Password" required>
+                  <button type="button" onClick="login()">Login</button>
+                  <a>Forget Password?</a>
+              </div>
+
+
+            </form>
+            <!-- <script>
+    
+
+                function login() {
+                  let name = document.getElementById("Username").value;
+                  let pass = document.getElementById("Password").value;
+                  let details = [
+                    { Username: "Arul", Password: "1234" }, 
+                    { Username: "Guru", Password: "5678" } 
+                  ];
+            
+                  let isValidUser = details.some(user => user.Username === name && user.Password === pass);
+            
+                  if (isValidUser) {
+                    // If the user is valid, remove the login form and show the user information form.
+                    alert("valid");
+                    window.location.href="/connect.html";
+                  
+                    
+                  } else {
+                  
+                    alert("Not valid");
+                  }
+                }
+                
+            
+                
+            
+            </script> -->
+            <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+            
+        </body>
+</html>
